@@ -1,0 +1,101 @@
+[
+  {
+    "fields": {
+      "balance": 495,
+      "is_active": false,
+      "attempts": 4,
+      "is_admin": true,
+      "last_login": null,
+      "password": "pbkdf2_sha256$20000$ZN8GxeOwQ35J$8IEcfJHhA64Sc5pe3ihi8MJ04RgxUVimwnaWO7JR6pU=",
+      "card_number": 1111111111111111
+    },
+    "model": "actions.user",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "balance": 790,
+      "is_active": true,
+      "attempts": 0,
+      "is_admin": true,
+      "last_login": null,
+      "password": "pbkdf2_sha256$20000$6utw0iqRNw7A$FVncBq0OPBrxRPJvgxWYZUFz5BN61Abw5G1CSzqKej4=",
+      "card_number": 2222222222222222
+    },
+    "model": "actions.user",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "balance": 1000,
+      "is_active": true,
+      "attempts": 0,
+      "is_admin": true,
+      "last_login": null,
+      "password": "pbkdf2_sha256$20000$vJmtVfUrdQ9S$wXsibh3ZLj+s12C3nMmsDq/2vdJSaILtkcJeVp7nldk=",
+      "card_number": 3333333333333333
+    },
+    "model": "actions.user",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:48:03.717Z",
+      "amount": null,
+      "operation": "0",
+      "card": 1111111111111111
+    },
+    "model": "actions.operation",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:48:12.936Z",
+      "amount": 5,
+      "operation": "1",
+      "card": 1111111111111111
+    },
+    "model": "actions.operation",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:48:38.645Z",
+      "amount": null,
+      "operation": "0",
+      "card": 2222222222222222
+    },
+    "model": "actions.operation",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:49:07.611Z",
+      "amount": 10,
+      "operation": "1",
+      "card": 2222222222222222
+    },
+    "model": "actions.operation",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:49:12.774Z",
+      "amount": null,
+      "operation": "0",
+      "card": 2222222222222222
+    },
+    "model": "actions.operation",
+    "pk": 5
+  },
+  {
+    "fields": {
+      "date": "2016-05-13T15:49:47.280Z",
+      "amount": null,
+      "operation": "0",
+      "card": 3333333333333333
+    },
+    "model": "actions.operation",
+    "pk": 6
+  }
+]

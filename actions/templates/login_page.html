@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/login_page.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<form class="form-horizontal" action="" method="post">{% csrf_token %}
+    <div class="form-group">
+        <div class="card-number">
+            <h6 id="number-requezt"> Please, enter your card number</h6>
+            <h6 id="pin-requezt" hidden> Please, enter your PIN</h6>
+
+            <div class="screen"><input type="text" align="center"
+                                       id="number" disabled autocomplete="off"/>
+            <div class="messages" >
+                <p id="number-error" hidden>Card number length 16!</p>
+
+                <p id="pin-error" hidden>PIN length 4!</p>
+
+                <p id="success-message" hidden>Success!</p>
+            </div>
+            </div>
+            <div class="keypad">
+                <div class="keys">
+                    <button type="button" class="btn btn-info btn-xs">7</button>
+                    <button type="button" class="btn btn-info btn-xs">8</button>
+                    <button type="button" class="btn btn-info btn-xs">9</button>
+                </div>
+                <div class="keys">
+                    <button type="button" class="btn btn-info btn-xs">4</button>
+                    <button type="button" class="btn btn-info btn-xs">5</button>
+                    <button type="button" class="btn btn-info btn-xs">6</button>
+                </div>
+                <div class="keys">
+                    <button type="button" class="btn btn-info btn-xs">1</button>
+                    <button type="button" class="btn btn-info btn-xs">2</button>
+                    <button type="button" class="btn btn-info btn-xs">3</button>
+                </div>
+                <div class="keys">
+                    <button type="button" class="btn btn-info btn-xs">0</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-success" type="button" name="ok-button" disabled
+                value="OK">OK
+        </button>
+        <button class="btn btn-warning" type="reset" name="clear-button"
+                value="Clear">CLEAR
+        </button>
+        <button  class="btn btn-danger" type="button" name="exit-button" id="exit"
+                value="Clear">EXIT
+        </button>
+    </div>
+</form>
+
+
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'js/login_page.js' %}"></script>
+{% endblock js %}

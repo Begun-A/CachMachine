@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+<h4>Not enough money on card!</h4>
+<div class="form-group">
+    <a class="btn btn-success" href={% url 'operations' %} role="button">BACK</a>
+</div>
+{% endblock content %}

@@ -1,0 +1,24 @@
+.keys:not(:last-of-type) {
+    margin-bottom: 4px;
+}
+.card-number button {
+    width: 25px;
+}
+
+.card-number {
+    border: 1px solid #D6D6D6;
+    padding: 10px;
+    width: 190px;
+    display: inline-block;
+    background-color: #F5F5F5;
+}
+.screen input {
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    color: #333;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+    width: 100%;
+    text-align: center;
+}

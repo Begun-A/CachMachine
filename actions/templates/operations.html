@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+<div class="form-group">
+        <a class="btn btn-success" href={% url 'balance' %} role="button">BALANCE</a>
+        <a class="btn btn-primary" href={% url 'withdrawal' %} role="button">WITHDRAW AMOUNT</a>
+        <a class="btn btn-danger" href={% url 'exit' %} role="button">EXIT</a>
+    </div>
+{% endblock content %}

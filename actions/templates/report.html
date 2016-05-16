@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+<table class="table table-striped table-hover table-bordered">
+    <tr>
+        <td>Card</td>
+        <td>{{ card }}</td>
+    </tr>
+    <tr>
+        <td>Date</td>
+        <td>{{ date }}</td>
+    </tr>
+    <tr>
+        <td>Amount</td>
+        <td>{{ amount }}</td>
+    </tr>
+    <tr>
+        <td>Balance</td>
+        <td>{{ balance }}</td>
+    </tr>
+</table>
+<div class="form-group">
+    <a class="btn btn-success" href={% url 'operations' %} role="button">BACK</a>
+    <a class="btn btn-danger" href={% url 'exit' %} role="button">EXIT</a>
+</div>
+{% endblock content %}
